@@ -18,4 +18,12 @@ describe('ValidationService', () => {
     expect(service.validateCredentials).toBeTruthy();
   });
 
+  it('Test validateCredential functionality', ()=>{
+    expect(service.validateCredentials("admin1234", "12345678")).toBeTruthy();
+  })
+
+  it('Test validateCredential functionality (Negative test)', ()=>{
+    expect(service.validateCredentials("xyz123", "1234567")).toBeFalsy();
+  })
+
 });

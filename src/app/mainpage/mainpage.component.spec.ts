@@ -19,7 +19,7 @@ describe('MainpageComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('Main page shoulg be valid', () => {
     expect(component).toBeTruthy();
   });
 });
